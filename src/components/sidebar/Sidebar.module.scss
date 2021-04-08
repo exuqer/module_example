@@ -1,0 +1,13 @@
+.aside {
+  width: 350px;
+  background: aquamarine;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+
+  .header {
+    height: 40px;
+    background: white;
+    box-shadow: green;
+  }
+}
