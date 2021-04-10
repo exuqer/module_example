@@ -1,0 +1,12 @@
+@import "../colors";
+
+.aside {
+  width: 250px;
+  position: fixed;
+  height: 100%;
+  border-right: 1px solid $default-dark;
+
+  .contentWrapper {
+    padding: 16px;
+  }
+}

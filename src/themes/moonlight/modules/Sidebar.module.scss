@@ -1,0 +1,12 @@
+@import "../colors.scss";
+
+.aside {
+  width: 350px;
+  position: fixed;
+  height: 100%;
+  box-shadow: 0 0 12px 4px rgba($moonlight-dark, .2);
+
+  .contentWrapper {
+    padding: 16px;
+  }
+}
