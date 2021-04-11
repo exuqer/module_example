@@ -1,22 +1,9 @@
-export default {
-  name: 'MyButton',
+import createComponent from '@/utils/createComponent';
+
+export default createComponent('Button', {
   emits: {
     // No validation
     click: null,
-  },
-
-  props: {
-    cssModule: {
-      type: Object,
-      default: null,
-    },
-  },
-
-  computed: {
-    currentModule() {
-      const theme = this.$globals.theme.Button;
-      return this.cssModule || theme;
-    },
   },
 
   render() {
@@ -27,4 +14,4 @@ export default {
       { this.$slots.default() }
     </button>;
   },
-};
+});

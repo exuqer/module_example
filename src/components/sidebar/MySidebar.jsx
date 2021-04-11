@@ -1,23 +1,11 @@
+import createComponent from '@/utils/createComponent';
 import MySidebarHeader from '@/components/sidebar/MySidebarHeader';
 
-export default {
-  name: 'MySidebar',
+export default createComponent('Sidebar', {
   props: {
     caption: {
       type: String,
       default: 'Сайдбар',
-    },
-
-    cssModule: {
-      type: Object,
-      default: null,
-    },
-  },
-
-  computed: {
-    currentModule() {
-      const theme = this.$globals.theme.Sidebar;
-      return this.cssModule || theme;
     },
   },
 
@@ -29,4 +17,4 @@ export default {
       </section>
     </aside>;
   },
-};
+});

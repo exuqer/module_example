@@ -1,18 +1,6 @@
-export default {
-  name: 'MySidebarHeader',
+import createComponent from '@/utils/createComponent';
 
-  cssModule: {
-    type: Object,
-    default: null,
-  },
-
-  computed: {
-    currentModule() {
-      const theme = this.$globals.theme.SidebarHeader;
-      return this.cssModule || theme;
-    },
-  },
-
+export default createComponent('SidebarHeader', {
   render() {
     return <div class={this.currentModule.header}>
       <h2>
@@ -20,4 +8,4 @@ export default {
       </h2>
     </div>;
   },
-};
+});
