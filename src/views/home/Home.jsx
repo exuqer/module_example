@@ -3,6 +3,7 @@ import './Home.scss';
 import MyButton from '@/components/button/MyButton';
 import MoonlightTheme from '@/themes/moonlight/Moonlight';
 import DefaultTheme from '@/themes/default/Default';
+import MyLayout from '@/components/layout/MyLayout';
 
 // examples local component change
 // import MoonlightSidebar from '@/themes/moonlight/modules/Sidebar.module.scss';
@@ -20,7 +21,7 @@ export default {
     },
   },
   render() {
-    return <>
+    return <MyLayout>
         <MySidebar // cssModule={{ ...MoonlightSidebar, ...SidebarContentWrapper }}
         >
           aasdasdasdasd12
@@ -28,6 +29,6 @@ export default {
               Сменить тему
           </MyButton>
         </MySidebar>
-      </>;
+      </MyLayout>;
   },
 };
